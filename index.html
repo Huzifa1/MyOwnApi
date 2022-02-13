@@ -1,0 +1,18 @@
+<script>
+
+fetch('https://training20220213a.herokuapp.com/huzifa')
+    .then(result => result.json())
+    .then(output => {
+        var x = document.getElementById("myUl");
+        output.forEach(element => {
+            var y = document.createElement('option');
+            y.innerHTML = element.name;
+            x.appendChild(y);
+        });
+        
+        
+});
+
+</script>
+
+<select id = "myUl"></select>
