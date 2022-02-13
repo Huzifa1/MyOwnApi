@@ -10,7 +10,7 @@ app.get("/", function (req, res) {
   res.send("<h1>Hello World!</h1>")
 })
 app.get("/huzifa", function (req, res) {
-    res.send("[{id:1, name:'huzifa'}, {id:2, name:'Walid'}, {id:3, name:'Aya'}, {id:4, name:'Moayad'}]")
+    res.send('[{"id":1, "name":"Huzifa"}, {"id":2, "name":"Walid"}, {"id":3, "name":"Aya"}, {"id":4, "name":"Moayad"}]')
   })
 // start the server listening for requests
 app.listen(process.env.PORT || 3000, 
